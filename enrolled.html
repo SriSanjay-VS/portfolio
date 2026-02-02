@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrolled Candidates - Course Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="myscript.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div>
+      <h2>Course Portal</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="available.html">Courses</a>
+        <a href="register.html">Register</a>
+        <a href="enrolled.html">Enrolled</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Enrolled Candidates</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email ID</th>
+        <th>Course Name</th>
+      </tr>
+    </thead>
+    <tbody id="enrolledtable"></tbody>
+  </table>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      showCourse();
+    };
+  </script>
+</body>
+</html>

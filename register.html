@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration - Course Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div>
+      <h2>Course Portal</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="available.html">Courses</a>
+        <a href="register.html">Register</a>
+        <a href="enrolled.html">Enrolled</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <h2>Course Registration</h2>
+    <p style="text-align:center; color:#94a3b8; margin-top: -1.5rem;">
+      Fill in the details to enroll in a course
+    </p>
+    
+    <form action="http://localhost:8080/course/register" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="emailId">Email Address</label>
+      <input type="email" id="emailId" name="emailId" placeholder="Enter your email" required>
+
+      <label for="courseName">Select Course</label>
+      <select id="courseName" name="courseName" required>
+        <option value="">SELECT COURSE</option>
+        <option value="Java Essentials">Java Essentials</option>
+        <option value="Python for ML">Python for ML</option>
+        <option value="Spring for developement">Spring for Development</option>
+      </select>
+
+      <button type="submit" class="btn" style="width:100%; margin-top: 1rem;">
+        <span>Register Now</span>
+      </button>
+    </form>
+  </section>
+</body>
+</html>
